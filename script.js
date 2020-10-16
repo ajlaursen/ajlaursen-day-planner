@@ -1,4 +1,3 @@
-console.log(moment().format("H"));
 var currentTime = moment().format("H");
 var fullCurrentTimeDate = moment().format("MMMM Do YYYY, h:mm a");
 var userEntry;
@@ -16,6 +15,7 @@ for (i = 8; i < 18; i++) {
     $("#" + i).addClass("past");
   }
   $("#" + i).text(userEntry[i - 8].text);
+  
 }
 
 // saving user text
@@ -23,16 +23,15 @@ for (i = 8; i < 18; i++) {
 // this funciton creates an array with user entry saved with the id of the text area
 
 $(".fa-save").click(function () {
-  userEntry = [];
+  // userEntry = [];
   for (i = 8; i < 18; i++) {
     userEntry.push({
       time: i,
       text: $("#" + i)
-        .val()
-        .trim(),
+      .val()
+      .trim(),
     });
   }
-  console.log(userEntry);
   localStorage.setItem("userEntry", JSON.stringify(userEntry));
 });
 
