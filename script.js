@@ -14,7 +14,9 @@ for (i = 8; i < 18; i++) {
   if (currentTime > i) {
     $("#" + i).addClass("past");
   }
+  if (userEntry.length > 0){
   $("#" + i).text(userEntry[i - 8].text);
+  }
   
 }
 
@@ -23,13 +25,11 @@ for (i = 8; i < 18; i++) {
 // this funciton creates an array with user entry saved with the id of the text area
 
 $(".fa-save").click(function () {
-  // userEntry = [];
+  userEntry = [];
   for (i = 8; i < 18; i++) {
     userEntry.push({
       time: i,
-      text: $("#" + i)
-      .val()
-      .trim(),
+      text: $("#" + i).val().trim(),
     });
   }
   localStorage.setItem("userEntry", JSON.stringify(userEntry));
