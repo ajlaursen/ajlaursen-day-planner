@@ -1,3 +1,4 @@
+
 var currentTime = moment().format("H");
 var fullCurrentTimeDate = moment().format("MMMM Do YYYY, h:mm a");
 var userEntry;
