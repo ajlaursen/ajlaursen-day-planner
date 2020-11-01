@@ -2,9 +2,9 @@
 
 * homework 5 for U of U coding bootcamp
 
-* Live Site: https://ajlaursen.github.io/ajlaursens-weather-widget/
+* Live Site: https://ajlaursen.github.io/ajlaursen-day-planner/
 
-* Repo: https://github.com/ajlaursen/ajlaursens-weather-widget
+* Repo: https://github.com/ajlaursen/ajlaursen-day-planner
 
 * created day scheduler.
 
