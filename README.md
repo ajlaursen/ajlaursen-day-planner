@@ -1,4 +1,4 @@
-# Weather Widget
+# Day Planner
 
 * homework 5 for U of U coding bootcamp
 
